@@ -1,38 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgb(99, 168, 99);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link-nav {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.link-nav:hover {
+  background-color: rgba(0, 0, 0, 0.658);
+  color: rgb(99, 168, 99);
+}
+
+.home-main {
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 30px;
+  background-image: linear-gradient(to bottom right, rgb(99, 168, 99), green, black);
+}
+
+.home-main h2 {
+  font-size: 3rem;
+}
+
+.home-link {
   color: white;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.671);
+  padding: 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.home-link:hover {
+  background-color: rgba(0, 0, 0, 0.37);
+  color: rgb(99, 168, 99);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: justify;
+  padding: 15px;
+  height: 50vh;
+  width: 50vw;
+}
+
+button {
+  margin: 20px;
+  color: white;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.671);
+  padding: 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.37);
+  color: rgb(99, 168, 99);
+}
+
+input, textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  resize: none;
+}
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.client {
+  background-color: white;
+  padding: 15px;
+  list-style: none;
+  min-width: 100px;
+  border-radius: 15px;
 }
